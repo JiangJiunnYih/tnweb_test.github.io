@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>台南地區公共運輸旅遊排程規劃服務系統</title>
+</head>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid black; 
+  border-collapse: collapse;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFD382;
+}
+</style>
+
+<style>
+      body {
+        background: crimson;
+      }
+      .box {
+        width: auto;
+        height: auto;
+      }
+      img {
+        width: auto;
+        height: auto;
+      }
+    </style>
+
+<style>
+a:link {
+  color: #FAFAFA;
+}
+a:visited {
+  color: #FAFAFA;
+}
+a:hover {
+  color: #FAFAFA;
+}
+a:active {
+  color: #FAFAFA;
+}
+</style>
+
+<script>
+      // Function to update the time and date on the page
+      function updateTime() {
+        // Get the current date and time
+        var now = new Date();
+
+        // Format the time as HH:MM:SS
+        var hours = now.getHours().toString().padStart(2, '0');
+        var minutes = now.getMinutes().toString().padStart(2, '0');
+        var seconds = now.getSeconds().toString().padStart(2, '0');
+        var timeString = hours + ':' + minutes + ':' + seconds;
+
+        // Format the date as YYYY-MM-DD
+        var year = now.getFullYear();
+        var month = (now.getMonth() + 1).toString().padStart(2, '0');
+        var day = now.getDate().toString().padStart(2, '0');
+        var dateString = year + '-' + month + '-' + day + '&nbsp;&nbsp;&nbsp;';
+
+        // Update the HTML element with the time and date
+        var dateTimeString = '當前時間: ' + dateString + timeString;
+        show = dateTimeString.fontsize(2)
+        document.getElementById('datetime').innerHTML = show;
+      }
+      setInterval(updateTime, 1000);
+    </script>
+    
+<body class="w3-container w3-green" style="background-color:#D4FFD4;">
+    <div style="text-align:center;"><h1><font face = @標楷體 size=5>台南地區公共運輸旅遊排程規劃服務系統</h1>
+</div>
+
+<div>
+<p><b><font face=@標楷體 size=3>旅遊排程系統登入</b></p>
+<label for="account"><font face=@標楷體 size=2>帳號:</label>
+<input type = "text" id = "account" name = "account"/><br><br>
+<label for = "password1"><font face = @標楷體 size = 2>密碼:</label>
+<input type = password id="password1" name="password"/>
+<br><br><INPUT TYPE = submit VALUE=會員登入>&nbsp;&nbsp;&nbsp;<INPUT TYPE=submit VALUE=註冊會員><br><br></div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+
+</div>
+
+
+<br><table style="width:1800px">
+    <caption style="font-weight: bold;font-size: 20px"><font face=@標楷體 size=5>臺南市政府觀光局為民服務窗口配置彙整表</caption> 
+        <tr> 
+            <th><font size="3">為民服務民眾洽辦業務項目</th> 
+            <th><font size="3">洽辦地點<br>(民治、永華市政中心或其他）</th>
+            <th><font size="3">洽辦科別</th> 
+            <th><font size="3">聯絡電話</th>
+            <th><font size="3">地址</th>
+            <th><font size="3">e-mail</th>
+            <th><font size="3">備註</th>
+        </tr> 
+        <tr> 
+            <td><font size="3">旅館設立申請及相關服務</td> 
+            <td><font size="3">民治市政中心</td> 
+            <td><font size="3">觀光事業科</td> 
+            <td><font size="3"><phone>06-6350192 or 06-6326215</phone></td>
+            <td><font size="3">73001台南市新營區民治路36號</td>
+            <td><a href="https://www.twtainan.net/zh-tw/attractions/detail/1354"  style="color:#000000;">https://www.twtainan.net/zh-tw/attractions/detail/1354</a></td>
+            <td></td>
+        </tr> 
+        <tr> 
+            <td><font size="3">文宣品索取</td> 
+            <td><font size="3">永華市政中心</td> 
+            <td><font size="3">旅遊服務科</td> 
+            <td><font size="3"><phone>06-3901175</phone></td>
+            <td><font size="3">708台南市安平區永華路二段6號</td>
+            <td></td>
+            <td></td>
+        </tr> 
+        <tr> 
+            <td><font size="3">民宿設立申請及相關服務</td> 
+            <td><font size="3">民治市政中心</td> 
+            <td><font size="3">觀光事業科</td> 
+            <td><font size="3"><phone>06-6350192 or 06-6326215</phone></td>
+            <td><font size="3">73001台南市新營區民治路36號</td>
+            <td><a href="https://www.twtainan.net/zh-tw/attractions/detail/1354"  style="color:#000000;">https://www.twtainan.net/zh-tw/attractions/detail/1354</a></td>
+            <td></td>
+        </tr> 
+        <tr> 
+            <td><font size="3">觀光遊樂業設立申請</td> 
+            <td><font size="3">民治市政中心</td> 
+            <td><font size="3">觀光技術科</td> 
+            <td><font size="3"><phone>06-6334905</phone></td>
+            <td><font size="3">73001台南市新營區民治路36號</td>
+            <td><a href="https://www.twtainan.net/zh-tw/attractions/detail/1354"  style="color:#000000;">https://www.twtainan.net/zh-tw/attractions/detail/1354</a></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td><font size="3">採購案領標、開標作業</td> 
+            <td><font size="3">民治市政中心</td> 
+            <td><font size="3">秘書室</td> 
+            <td><font size="3"><phone>06-6350196</phone></td>
+            <td><font size="3">73001台南市新營區民治路36號</td>
+            <td><a href="https://www.twtainan.net/zh-tw/attractions/detail/1354"  style="color:#000000;">https://www.twtainan.net/zh-tw/attractions/detail/1354</a></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td><font size="3">DM、文宣配送</td> 
+            <td><font size="3">民治市政中心</td> 
+            <td><font size="3">觀光行銷科</td> 
+            <td><font size="3"><phone>06-6353226 or 06-6356571</phone></td>
+            <td><font size="3">73001台南市新營區民治路36號</td>
+            <td><a href="https://www.twtainan.net/zh-tw/attractions/detail/1354"  style="color:#000000;">https://www.twtainan.net/zh-tw/attractions/detail/1354</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+<div class="wrapper">
+    <div class="content">
+        <footer class="wrapper" style="background-color:#2B2B2B;text-align:left;padding:10px;margin-top:20px;color:#F5F5F5;bottom: 0;">
+	臺南市政府全球資訊網:&nbsp;&nbsp;&nbsp;<a href="https://www.tainan.gov.tw/Default.aspx">https://www.tainan.gov.tw/Default.aspx</a><br>
+        臺南市政府觀光旅遊局行政服務網:&nbsp;&nbsp;&nbsp;<a href="https://admin.twtainan.net/">https://admin.twtainan.net/</a><br><br><br>
+
+            臺南市旅宿業申設或變更諮詢專線：(06)6350192<br>	
+	    民治市政中心：730201臺南市新營區民治路36號 (06)635-3226、(06)635-3079<br>
+            永華市政中心：708201臺南市安平區永華路2段6號 (06)390-1175<br>
+            網頁相關問題: 請聯繫 <email>olivereddie1996.mg10@nycu.edu.tw</email><br>
+            <p id="datetime"></p><br><br>
+            <div style="text-align:center;"><h6><font face=@標楷體 size=2>Copyright © 2023 JIANG, JIUNN-YIH</h6>
+        </footer>
+        
+    </div>
+  </div>
+  
+</body>
+</html>
